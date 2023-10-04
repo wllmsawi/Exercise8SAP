@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 595.09 435.06">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.18em;
+      }
+
+      .cls-2 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-3 {
+        letter-spacing: .01em;
+      }
+
+      .cls-4 {
+        fill: #0e21a0;
+        font-family: QUARTZO-Bold, QUARTZO;
+        font-size: 152.65px;
+        font-weight: 700;
+      }
+
+      .cls-5 {
+        letter-spacing: -.05em;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <image width="727" height="343" transform="scale(.79 .72)" xlink:href="../../../Downloads/pngaaa.com-1042130-removebg-preview-removebg-preview (1).png"/>
+      <text class="cls-4" transform="translate(28.21 282.87) scale(.92 1)"><tspan class="cls-1" x="0" y="0">W</tspan><tspan class="cls-2" x="124.26" y="0">A</tspan><tspan class="cls-3" x="230.35" y="0">RU</tspan><tspan class="cls-5" x="417.03" y="0">N</tspan><tspan x="495.8" y="0">G</tspan><tspan x="110.75" y="122.12">TIKET</tspan></text>
+    </g>
+  </g>
+</svg>
