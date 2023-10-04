@@ -22,13 +22,13 @@ function Navbar() {
   return (
     <Box bgColor="#F1EFEF" maxWidth="100%">
       <HStack bgColor="#B4B4B3" p="5px">
-        <Text fontSize="12px">Download WARUNGTIKET App</Text>
+        <Link fontSize="12px">Download WARUNGTIKET App</Link>
         <Spacer></Spacer>
         <HStack spacing="30px">
-          <Text fontSize="12px">Tentang WARUNGTIKET</Text>
-          <Text fontSize="12px">Hubungi WARUNGTIKET </Text>
-          <Text fontSize="12px">Kritik & Saran</Text>
-          <Text fontSize="12px">FAQ</Text>
+          <Link fontSize="12px">Tentang WARUNGTIKET</Link>
+          <Link fontSize="12px">Hubungi WARUNGTIKET </Link>
+          <Link fontSize="12px">Kritik & Saran</Link>
+          <Link fontSize="12px">FAQ</Link>
         </HStack>
       </HStack>
 
