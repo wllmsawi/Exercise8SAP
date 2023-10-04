@@ -1,4 +1,4 @@
-import { Box, Text, Heading } from "@chakra-ui/react";
+import { Box, Text, Heading, VStack } from "@chakra-ui/react";
 import CartContainer from "./components/cartcontainer";
 
 function CartPages() {
@@ -16,7 +16,11 @@ function CartPages() {
         </Box>
       </Box>
       <Box h="auto" p="1em 2.5em">
-        <CartContainer />
+        <VStack align="stretch" spacing="2.5em">
+          <CartContainer />
+          <CartContainer />
+          <CartContainer />
+        </VStack>
       </Box>
     </Box>
   );
