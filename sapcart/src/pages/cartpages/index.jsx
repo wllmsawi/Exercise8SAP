@@ -1,19 +1,15 @@
-import { Box, Container } from "@chakra-ui/react";
+import { Box, Text, Button, Container } from "@chakra-ui/react";
 
 function CartPages() {
   return (
-    <Container
-      w="100%"
-      display="flex"
-      alignItems="center"
-      justifyContent="flex-start"
-      bg="grey"
-      p="0 1.5em"
-    >
-      <Box bg="red" w="100%" p="0">
-        <h1>Keranjang</h1>
+    <Box display="flex" flexDir="column" bgColor="red" minH="100vh">
+      <Box bg="grey" p="1em" display="flex" flexDir="flex-start">
+        <Box>
+          <Text as="h1">Keranjang</Text>
+        </Box>
       </Box>
-    </Container>
+      <Box></Box>
+    </Box>
   );
 }
 
