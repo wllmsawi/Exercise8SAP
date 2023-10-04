@@ -8,7 +8,9 @@ function CartPages() {
           <Text as="h1">Keranjang</Text>
         </Box>
       </Box>
-      <Box></Box>
+      <Box>
+          
+      </Box>
     </Box>
   );
 }
