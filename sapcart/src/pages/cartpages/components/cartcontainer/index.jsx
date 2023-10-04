@@ -15,8 +15,8 @@ function CartContainer() {
       <Box
         justifyContent="flex-start"
         p=".5em 0"
-        borderTop="1px solid black"
-        borderBottom="1px solid black"
+        borderTop="2px solid lightGray"
+        borderBottom="2px solid lightGray"
         w="70%"
       >
         <VStack spacing=".5em" align="stretch">
