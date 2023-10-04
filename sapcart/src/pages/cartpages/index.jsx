@@ -12,7 +12,9 @@ function CartPages() {
         flexDir="flex-start"
       >
         <Box>
-          <Heading as="h1">Keranjang</Heading>
+          <Heading as="h1" fontSize="2xl">
+            Keranjang
+          </Heading>
         </Box>
       </Box>
       <Box h="auto" p="1em 2.5em">
