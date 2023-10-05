@@ -1,33 +1,57 @@
 import { Box, Text, Heading, VStack, HStack, Flex } from "@chakra-ui/react";
 import CartContainer from "./components/cartcontainer";
-
+import img1 from "../../img/1.jpg";
+import img2 from "../../img/2.jpg";
+import img3 from "../../img/3.jpg";
+import img4 from "../../img/4.jpg";
+import img5 from "../../img/5.jpg";
 function CartPages() {
   const dataItem = [
     {
       storeName: "Toko Madura",
       storeLoc: "Seturan",
-      itemName: "Pop Mie Purwadhika",
-      itemPrice: "Rp 5.000,00-",
+      itemName: "Celana",
+      itemPrice: "Rp 100.000,00-",
       itemQuantity: 1,
+      image: img1,
     },
     {
       storeName: "Toko Madura",
       storeLoc: "Seturan",
-      itemName: "Teh Kotak Purwadhika",
-      itemPrice: "Rp 5.000,00-",
+      itemName: "Baju",
+      itemPrice: "Rp 50.000,00-",
       itemQuantity: 1,
+      image: img2,
     },
     {
       storeName: "Toko Madura",
       storeLoc: "Seturan",
-      itemName: "Susu Purwadhika",
-      itemPrice: "Rp 5.000,00-",
+      itemName: "Sarung Kaki",
+      itemPrice: "Rp 25.000,00-",
       itemQuantity: 1,
+      image: img3,
+    },
+    {
+      storeName: "Toko Madura",
+      storeLoc: "Seturan",
+      itemName: "Kaos Tangan",
+      itemPrice: "Rp 25.000,00-",
+      itemQuantity: 1,
+      image: img4,
+    },
+    {
+      storeName: "Toko Madura",
+      storeLoc: "Seturan",
+      itemName: "Sepatu",
+      itemPrice: "Rp 300.000,00-",
+      itemQuantity: 1,
+      image: img5,
     },
   ];
   let itemList = dataItem.map((data) => {
     return (
       <CartContainer
+        img={data.image}
         storeName={data.storeName}
         storeLoc={data.storeLoc}
         itemName={data.itemName}
