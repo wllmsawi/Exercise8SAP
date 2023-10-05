@@ -8,10 +8,10 @@ import {
   InputGroup,
   InputLeftElement,
   Spacer,
-  IconButton
+  IconButton,
 } from "@chakra-ui/react";
 import artboard from "./img/artboard.png";
-import { Search2Icon, SearchIcon } from "@chakra-ui/icons";
+import { Search2Icon } from "@chakra-ui/icons";
 import { Link } from "@chakra-ui/react";
 import { BsCartFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
@@ -20,8 +20,8 @@ import { RiAccountCircleFill } from "react-icons/ri";
 
 function Navbar() {
   return (
-    <Box bgColor="#F1EFEF" maxWidth="100%">
-      <HStack bgColor="#B4B4B3" p="5px">
+    <Box>
+      <HStack bgColor="#B4B4B3" p=".5em 2.5em">
         <Link fontSize="12px">Download WARUNGTIKET App</Link>
         <Spacer></Spacer>
         <HStack spacing="30px">
@@ -31,8 +31,7 @@ function Navbar() {
           <Link fontSize="12px">FAQ</Link>
         </HStack>
       </HStack>
-
-      <Box>
+      <Box bgColor="#F1EFEF" maxWidth="100%" p="1em 2.5em">
         <Flex
           w="100%"
           px="0"
@@ -40,7 +39,7 @@ function Navbar() {
           align="center"
           justifyContent="space-between"
         >
-          <Box ml="50px">
+          <Box>
             <Img src={artboard} h="80px" alt="logo" />
           </Box>
           <HStack spacing="20px">
@@ -56,17 +55,29 @@ function Navbar() {
               />
             </InputGroup>
           </HStack>
-          <HStack spacing="20px" ml="0">
-            <IconButton icon={<BsCartFill size="24px"/>}></IconButton>
-            <IconButton icon={<MdEmail size="24px"/>}></IconButton>
-            <IconButton icon={<IoNotificationsSharp size="24px"/>}></IconButton>
+          <HStack ml="0">
+            <IconButton
+              variant="ghost"
+              icon={<BsCartFill size="24px" bg="red" />}
+            ></IconButton>
+            <IconButton
+              variant="ghost"
+              icon={<MdEmail size="24px" />}
+            ></IconButton>
+            <IconButton
+              variant="ghost"
+              icon={<IoNotificationsSharp size="24px" />}
+            ></IconButton>
           </HStack>
           <Box>
-            <IconButton icon={<RiAccountCircleFill size="24px"/>}></IconButton>
+            <IconButton
+              variant="ghost"
+              icon={<RiAccountCircleFill size="24px" />}
+            ></IconButton>
           </Box>
         </Flex>
       </Box>
-      <Box>
+      <Box bgColor="#F1EFEF">
         <Flex w="100%" px="0" py="0" align="center" justifyContent="center">
           <HStack spacing="30px" fontSize="12px">
             <Link to="#">Tiket Konser</Link>
