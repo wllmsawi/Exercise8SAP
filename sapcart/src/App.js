@@ -1,6 +1,6 @@
 import Navbar from "./pages/navbar";
 import JumboTron from "./pages/jumboTron";
-// import "./App.css";
+import CartPages from "./pages/cartpages";
 
 function App() {
   return (
