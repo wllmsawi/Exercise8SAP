@@ -6,6 +6,7 @@ import {
   HStack,
   Flex,
   Spacer,
+  Img,
 } from "@chakra-ui/react";
 import { BiTrash } from "react-icons/bi";
 import { AiFillMinusCircle, AiFillPlusCircle } from "react-icons/ai";
@@ -32,12 +33,14 @@ function CartContainer(props) {
           <Box>
             <HStack>
               <Checkbox></Checkbox>
-              <Box
+              <Img
+                border=".5em solid lightGray"
                 w="7.5em"
                 h="7.5em"
                 borderRadius="0.5em"
                 bgColor="lightGray"
-              ></Box>
+                src={props.img}
+              />
               <VStack spacing="0" align="flex-start">
                 <Text as="b">{props.itemName}</Text>
                 <Text fontSize="sm">{props.itemPrice}</Text>
