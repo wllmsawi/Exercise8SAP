@@ -40,7 +40,7 @@ function Navbar() {
           justifyContent="space-between"
         >
           <Box>
-            <Img src={artboard} h="80px" alt="logo" />
+            <Img src={artboard} h="40px" alt="logo" />
           </Box>
           <HStack spacing="20px">
             <Link to="#Kategori">Kategori</Link>
@@ -77,7 +77,7 @@ function Navbar() {
           </Box>
         </Flex>
       </Box>
-      <Box bgColor="#F1EFEF">
+      <Box bgColor="#F1EFEF" p="0.5em 0">
         <Flex w="100%" px="0" py="0" align="center" justifyContent="center">
           <HStack spacing="30px" fontSize="12px">
             <Link to="#">Tiket Konser</Link>
