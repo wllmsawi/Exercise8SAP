@@ -1,12 +1,9 @@
-import { Container } from "@chakra-ui/react";
-import hoodie from "./image/hoodie";
+import { Box, Container } from "@chakra-ui/react";
+import 
 
 function CartContainer() {
   return (
-    <Container>
-      <h1>Daftar Item</h1>
-      <img src="hoodie" alt="my-hoodie" />
-    </Container>
+    
   );
 }
 

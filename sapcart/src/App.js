@@ -1,8 +1,9 @@
 import CartContainer from "./cart-container";
+
 function App() {
   return (
     <div>
-      <CartContainer/>
+      <CartContainer />
     </div>
   );
 }
