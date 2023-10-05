@@ -1,8 +1,6 @@
 import { Box, HStack, Image, VStack, Text } from "@chakra-ui/react";
 import { BsFillCartPlusFill } from "react-icons/bs";
 
-import img1 from "../../image/1.jpg";
-
 function Card(props) {
   return (
     <Box>
