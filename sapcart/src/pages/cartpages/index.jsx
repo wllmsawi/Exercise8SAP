@@ -28,7 +28,7 @@ function CartPages() {
   let itemList = dataItem.map((data) => {
     return (
       <CartContainer
-        storeName={data.itemName}
+        storeName={data.storeName}
         storeLoc={data.storeLoc}
         itemName={data.itemName}
         itemPrice={data.itemPrice}
