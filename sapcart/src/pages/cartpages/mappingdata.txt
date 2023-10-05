@@ -1,0 +1,5 @@
+nama toko = storeName
+lokasi toko = storeLoc
+nama item = itemName
+harga item = itemPrice
+kuantitas item = itemQuantity

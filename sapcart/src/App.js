@@ -1,6 +1,11 @@
-import "./App.css";
+import CartPages from "./pages/cartpages";
+
 function App() {
-  return <div></div>;
+  return (
+    <div>
+      <CartPages />
+    </div>
+  );
 }
 
 export default App;
