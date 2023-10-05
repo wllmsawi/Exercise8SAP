@@ -1,7 +1,6 @@
 import React from "react";
 import { Box, Image } from "@chakra-ui/react";
 import jumbo from "./img/jumbo1.png";
-
 function JumboTron() {
   return (
     <Box p="2.5em 1.5em" borderRadius="1em" overflow="hidden">
