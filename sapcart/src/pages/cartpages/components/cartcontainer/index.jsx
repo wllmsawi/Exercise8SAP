@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 import { BiTrash } from "react-icons/bi";
 import { AiFillMinusCircle, AiFillPlusCircle } from "react-icons/ai";
-function CartContainer() {
+function CartContainer(props) {
   return (
     <>
       <Box
@@ -24,17 +24,23 @@ function CartContainer() {
             <HStack>
               <Checkbox></Checkbox>
               <VStack spacing="0" align="flex-start">
-                <Text as="b">Toko Madura</Text>
-                <Text fontSize="xs">Seturan</Text>
+                <Text as="b">{props.storeName}</Text>
+                <Text fontSize="xs">{props.storeLoc}</Text>
               </VStack>
             </HStack>
           </Box>
           <Box>
             <HStack>
               <Checkbox></Checkbox>
+              <Box
+                w="7.5em"
+                h="7.5em"
+                borderRadius="0.5em"
+                bgColor="lightGray"
+              ></Box>
               <VStack spacing="0" align="flex-start">
-                <Text>Pop Mie Mas Michael</Text>
-                <Text>Rp 10.000,00</Text>
+                <Text as="b">{props.itemName}</Text>
+                <Text fontSize="sm">{props.itemPrice}</Text>
               </VStack>
             </HStack>
           </Box>
@@ -60,9 +66,9 @@ function CartContainer() {
               </Box>
               <Box p="0 .5em">
                 <HStack>
-                  <AiFillPlusCircle />
-                  <Text>1</Text>
                   <AiFillMinusCircle />
+                  <Text>{props.itemQuantity}</Text>
+                  <AiFillPlusCircle />
                 </HStack>
               </Box>
             </Flex>
