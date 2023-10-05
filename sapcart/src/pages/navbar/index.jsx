@@ -7,8 +7,8 @@ import {
   Box,
   InputGroup,
   InputLeftElement,
-  Text,
   Spacer,
+  IconButton
 } from "@chakra-ui/react";
 import artboard from "./img/artboard.png";
 import { Search2Icon, SearchIcon } from "@chakra-ui/icons";
@@ -54,19 +54,15 @@ function Navbar() {
                 variant="filled"
                 placeholder="Cari di WARUNGTIKET"
               />
-              {/* type="text"
-              placeholder="Cari di WARUNGTIKET"
-              border="1px solid #949494"
-              w="700px" */}
             </InputGroup>
           </HStack>
           <HStack spacing="20px" ml="0">
-            <BsCartFill size="30px" />
-            <MdEmail size="30px" />
-            <IoNotificationsSharp size="30px" />
+            <IconButton icon={<BsCartFill size="24px"/>}></IconButton>
+            <IconButton icon={<MdEmail size="24px"/>}></IconButton>
+            <IconButton icon={<IoNotificationsSharp size="24px"/>}></IconButton>
           </HStack>
           <Box>
-            <RiAccountCircleFill size="30px" />
+            <IconButton icon={<RiAccountCircleFill size="24px"/>}></IconButton>
           </Box>
         </Flex>
       </Box>
