@@ -8,7 +8,7 @@ import img5 from "../../img/5.jpg";
 function CartPages() {
   const dataItem = [
     {
-      storeName: "Toko Madura",
+      storeName: "Toko Makassar",
       storeLoc: "Seturan",
       itemName: "Celana",
       itemPrice: "Rp 100.000,00-",
