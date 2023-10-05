@@ -1,10 +1,14 @@
-import CartPages from "./pages/cartpages";
+import Navbar from "./pages/navbar";
+import JumboTron from "./pages/jumboTron";
+// import "./App.css";
 
 function App() {
   return (
-    <div>
+    <>
+      <Navbar />
+      <JumboTron />
       <CartPages />
-    </div>
+    </>
   );
 }
 
