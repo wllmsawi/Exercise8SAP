@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Image } from "@chakra-ui/react";
-import jumbo from "./img/jumbo.png";
+import jumbo from "./img/jumbo1.png";
 
 function JumboTron() {
   return (
