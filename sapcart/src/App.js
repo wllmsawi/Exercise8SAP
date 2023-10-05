@@ -8,6 +8,7 @@ function App() {
     <Container maxW="100vw" padding="0">
       <Navbar />
       <JumboTron />
+      <CartContainer />
       <CartPages />
     </Container>
   );
