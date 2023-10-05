@@ -42,39 +42,46 @@ function Navbar() {
           <Box>
             <Img src={artboard} h="40px" alt="logo" />
           </Box>
+          <Spacer />
+          <Link to="#Kategori">Kategori</Link>
+          <Spacer />
           <HStack spacing="20px">
-            <Link to="#Kategori">Kategori</Link>
-            <InputGroup w="800px">
+            <InputGroup>
               <InputLeftElement>
                 <Search2Icon color="black" />
               </InputLeftElement>
               <Input
                 type="text"
-                variant="filled"
+                variant="outline"
                 placeholder="Cari di WARUNGTIKET"
+                border="2px solid lightgray"
+                w="40em"
               />
             </InputGroup>
           </HStack>
-          <HStack ml="0">
-            <IconButton
-              variant="ghost"
-              icon={<BsCartFill size="24px" bg="red" />}
-            ></IconButton>
-            <IconButton
-              variant="ghost"
-              icon={<MdEmail size="24px" />}
-            ></IconButton>
-            <IconButton
-              variant="ghost"
-              icon={<IoNotificationsSharp size="24px" />}
-            ></IconButton>
-          </HStack>
-          <Box>
-            <IconButton
-              variant="ghost"
-              icon={<RiAccountCircleFill size="24px" />}
-            ></IconButton>
-          </Box>
+          <Spacer />
+          <Flex>
+            <HStack ml="0" p="0 .5em" borderRight="2px solid lightgray">
+              <IconButton
+                variant="ghost"
+                icon={<BsCartFill size="24px" bg="red" />}
+              ></IconButton>
+              <IconButton
+                variant="ghost"
+                icon={<MdEmail size="24px" />}
+              ></IconButton>
+              <IconButton
+                variant="ghost"
+                icon={<IoNotificationsSharp size="24px" />}
+              ></IconButton>
+            </HStack>
+            <Box>
+              <IconButton
+                variant="ghost"
+                icon={<RiAccountCircleFill size="24px" />}
+              ></IconButton>
+            </Box>
+          </Flex>
         </Flex>
       </Box>
       <Box bgColor="#F1EFEF" p="0.5em 0">
