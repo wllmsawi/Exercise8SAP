@@ -12,11 +12,20 @@ function Card(props) {
           p="2.5em 1.5em"
           bg="lightgray"
         >
-          <Box borderRadius="0.5em" overflow="hidden">
-            <Image src={props.img} objectFit="cover" w="100%" h="160px" />
+          <Box overflow="hidden">
+            <Image
+            borderRadius={"0.5em"}
+              border="solid 0.2em grey"
+              src={props.img}
+              objectFit="cover"
+              w="100%"
+              h="160px"
+            />
           </Box>
           <VStack fontSize="sm" align="flex-end" spacing="0">
-            <Text as="b">{props.itemName}</Text>
+            <Text right="20px" as="b">
+              {props.itemName}
+            </Text>
             <Text>{props.itemPrice}</Text>
             <IconButton
               top="1.5em"
