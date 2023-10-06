@@ -1,4 +1,4 @@
-import { Box, Text, Heading, VStack, HStack, Flex } from "@chakra-ui/react";
+import { Box, Heading, VStack, } from "@chakra-ui/react";
 import CartContainer from "./components/cartcontainer";
 import { useSelector } from "react-redux/es/hooks/useSelector";
 import { removeFromCart } from "../../store/reducers/Counter";

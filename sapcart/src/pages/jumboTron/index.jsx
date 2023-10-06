@@ -9,7 +9,7 @@ function JumboTron() {
         w="100%"
         h="306px"
         border="5px solid lightgray"
-        borderRadius="1em"
+        borderRadius=".5em"
       />
     </Box>
   );
