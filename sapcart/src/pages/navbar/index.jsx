@@ -9,6 +9,8 @@ import {
   InputLeftElement,
   Spacer,
   IconButton,
+  Text,
+  Center,
 } from "@chakra-ui/react";
 import artboard from "./img/artboard.png";
 import { Search2Icon } from "@chakra-ui/icons";
@@ -67,25 +69,68 @@ function Navbar() {
           <Spacer />
           <Flex>
             <HStack ml="0" p="0 .5em" borderRight="2px solid lightgray">
-              <IconButton
-                onClick={showCart}
-                variant="ghost"
-                bgColor="transparent"
-                _hover={{ bg: "transparent" }}
-                icon={<BsCartFill size="24px" bg="red" />}
-              ></IconButton>
-              <IconButton
-                variant="ghost"
-                bgColor="transparent"
-                _hover={{ bg: "transparent" }}
-                icon={<MdEmail size="24px" />}
-              ></IconButton>
-              <IconButton
-                variant="ghost"
-                bgColor="transparent"
-                _hover={{ bg: "transparent" }}
-                icon={<IoNotificationsSharp size="24px" />}
-              ></IconButton>
+              <Flex position="relative">
+                <IconButton
+                  size="md"
+                  onClick={showCart}
+                  variant="ghost"
+                  bgColor="transparent"
+                  _hover={{ bg: "transparent" }}
+                  icon={<BsCartFill size="24px" bg="red" />}
+                />
+                <Text
+                  fontSize="0.75em"
+                  position={"absolute"}
+                  right="0"
+                  w={"1.5em"}
+                  h={"1.5em"}
+                  bgColor={"lightgray"}
+                  borderRadius={"50%"}
+                >
+                  <Center>0</Center>
+                </Text>
+              </Flex>
+              <Flex position="relative">
+                <IconButton
+                  variant="ghost"
+                  bgColor="transparent"
+                  _hover={{ bg: "transparent" }}
+                  icon={<MdEmail size="24px" />}
+                />
+
+                <Text
+                  position="absolute"
+                  fontSize="0.75em"
+                  right="0"
+                  size="xs"
+                  w={"1.5em"}
+                  h={"1.5em"}
+                  bgColor={"lightgray"}
+                  borderRadius={"50%"}
+                >
+                  <Center>15</Center>
+                </Text>
+              </Flex>
+              <Flex position="relative">
+                <IconButton
+                  variant="ghost"
+                  bgColor="transparent"
+                  _hover={{ bg: "transparent" }}
+                  icon={<IoNotificationsSharp size="24px" />}
+                ></IconButton>
+                <Text
+                  fontSize="0.75em"
+                  right="0"
+                  position="absolute"
+                  size="xs"
+                  w={"1.5em"}
+                  h={"1.5em"}
+                  bgColor={"lightgray"}
+                  borderRadius={"50%"}
+                >
+                  <Center>23</Center>
+                </Text>
+              </Flex>
             </HStack>
             <Box>
               <IconButton
