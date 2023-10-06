@@ -1,6 +1,6 @@
 import { Box, HStack, IconButton, Image, VStack, Text } from "@chakra-ui/react";
 import { BsFillCartPlusFill } from "react-icons/bs";
-
+import { useDispatch } from "react-redux";
 function Card(props) {
   return (
     <Box>
@@ -26,6 +26,7 @@ function Card(props) {
               bgColor="transparent"
               _hover={{ bg: "transparent" }}
               icon={<BsFillCartPlusFill />}
+              onClick={props.onClick}
             />
           </VStack>
         </Box>

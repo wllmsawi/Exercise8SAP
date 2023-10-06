@@ -5,9 +5,13 @@ import img3 from "../../pages/cart-container/image/3.jpg";
 import img4 from "../../pages/cart-container/image/4.jpg";
 import img5 from "../../pages/cart-container/image/5.jpg";
 import Card from "./components/cards";
+import { addToCart } from "../../store/reducers/Counter";
+import { useDispatch } from "react-redux";
 function CartContainer() {
+  const dispatch = useDispatch();
   const dataItem = [
     {
+      key: 1,
       storeName: "Toko Makassar",
       storeLoc: "Seturan",
       itemName: "Celana",
@@ -16,6 +20,7 @@ function CartContainer() {
       img: img1,
     },
     {
+      key: 2,
       storeName: "Toko Madura",
       storeLoc: "Seturan",
       itemName: "Baju",
@@ -24,6 +29,7 @@ function CartContainer() {
       img: img2,
     },
     {
+      key: 3,
       storeName: "Toko Madura",
       storeLoc: "Seturan",
       itemName: "Sarung Kaki",
@@ -32,6 +38,7 @@ function CartContainer() {
       img: img3,
     },
     {
+      key: 4,
       storeName: "Toko Madura",
       storeLoc: "Seturan",
       itemName: "Kaos Tangan",
@@ -40,6 +47,7 @@ function CartContainer() {
       img: img4,
     },
     {
+      key: 5,
       storeName: "Toko Madura",
       storeLoc: "Seturan",
       itemName: "Sepatu",
@@ -48,12 +56,14 @@ function CartContainer() {
       img: img5,
     },
   ];
-  let itemList = dataItem.map((data) => {
+  let itemList = dataItem.map((data, index) => {
     return (
       <Card
+        id={index}
         img={data.img}
         itemName={data.itemName}
         itemPrice={data.itemPrice}
+        onClick={() => dispatch(addToCart(data))}
       />
     );
   });
