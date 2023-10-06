@@ -20,9 +20,11 @@ import { MdEmail } from "react-icons/md";
 import { IoNotificationsSharp } from "react-icons/io5";
 import { RiAccountCircleFill } from "react-icons/ri";
 import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux/es/hooks/useSelector";
 
 function Navbar() {
   const navigate = useNavigate();
+  const value = useSelector((state) => state.counter.value);
   function showCart() {
     navigate("Checkout");
   }
@@ -87,7 +89,7 @@ function Navbar() {
                   bgColor={"lightgray"}
                   borderRadius={"50%"}
                 >
-                  <Center>0</Center>
+                  <Center>{value}</Center>
                 </Text>
               </Flex>
               <Flex position="relative">
