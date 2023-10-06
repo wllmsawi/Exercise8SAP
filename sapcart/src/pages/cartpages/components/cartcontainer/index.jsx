@@ -12,13 +12,14 @@ import {
 import { useState } from "react";
 import { BiTrash } from "react-icons/bi";
 import { AiFillMinusCircle, AiFillPlusCircle } from "react-icons/ai";
-import { useSelector, useDispatch } from "react-redux";
-import { decrement, increment } from "../../../../store/reducers/Counter";
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { increment, decrement } from "../../../../store/reducers/Counter";
 
 function CartContainer(props) {
-  const count = useSelector((state) => state.counter.value);
-  const dispatch = useDispatch();
   const [itemCounter, setItemCounter] = useState(1);
+  const dispatch = useDispatch();
+  const count = useSelector((state) => state.counter.value);
   return (
     <>
       <Box
@@ -78,6 +79,7 @@ function CartContainer(props) {
                       icon={<BiTrash />}
                       bgColor="transparent"
                       _hover={{ bg: "transparent" }}
+                      onClick={props.onClick}
                     />
                   </HStack>
                 </Box>
@@ -96,7 +98,6 @@ function CartContainer(props) {
                     />
                   </Box>
                   <Box align="center">
-                    {/* <Text>{count}</Text> */}
                     <Text>{itemCounter}</Text>
                   </Box>
                   <Box>

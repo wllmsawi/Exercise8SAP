@@ -15,13 +15,27 @@ export const Counter = createSlice({
     decrement: (state) => {
       state.value -= 1;
     },
-    incrementByAmount: (state, action) => {
-      state.value += action.payload;
+    addToCart: (state, actions) => {
+      const newItem = { ...actions.payload };
+      const checkItem = state.item.find(
+        (element) => element["key"] === newItem["key"]
+      );
+      if (checkItem) {
+        alert("Item udah ada bangsat");
+      } else {
+        state.value += 1;
+        state.item.push(newItem);
+      }
     },
-    addToCart: (state, actions) => {},
+    removeFromCart: (state, actions) => {
+      const itemToRemove = actions.payload;
+      state.item = state.item.filter((item) => item["key"] !== itemToRemove);
+      state.value -= 1;
+    },
   },
 });
 
-export const { increment, decrement, incresedByAmount } = Counter.actions;
+export const { increment, decrement, addToCart, removeFromCart } =
+  Counter.actions;
 
 export default Counter.reducer;
