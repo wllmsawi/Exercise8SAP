@@ -7,10 +7,19 @@ import {
   Flex,
   Spacer,
   Img,
+  IconButton,
 } from "@chakra-ui/react";
+import { useState } from "react";
 import { BiTrash } from "react-icons/bi";
 import { AiFillMinusCircle, AiFillPlusCircle } from "react-icons/ai";
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { increment, decrement } from "../../../../store/reducers/Counter";
+
 function CartContainer(props) {
+  const [itemCounter, setItemCounter] = useState(1);
+  const dispatch = useDispatch();
+  const count = useSelector((state) => state.counter.value);
   return (
     <>
       <Box
@@ -63,15 +72,45 @@ function CartContainer(props) {
                     >
                       Pindah ke wishlist
                     </Text>
-                    <BiTrash />
+                    <IconButton
+                      size="xs"
+                      color="black"
+                      fontSize="1em"
+                      icon={<BiTrash />}
+                      bgColor="transparent"
+                      _hover={{ bg: "transparent" }}
+                      onClick={props.onClick}
+                    />
                   </HStack>
                 </Box>
               </Box>
-              <Box p="0 .5em">
-                <HStack>
-                  <AiFillMinusCircle />
-                  <Text>{props.itemQuantity}</Text>
-                  <AiFillPlusCircle />
+              <Box>
+                <HStack spacing=".5em">
+                  <Box>
+                    <IconButton
+                      size="xs"
+                      color="black"
+                      fontSize="1em"
+                      icon={<AiFillMinusCircle />}
+                      onClick={() => setItemCounter(itemCounter - 1)}
+                      bgColor="transparent"
+                      _hover={{ bg: "transparent" }}
+                    />
+                  </Box>
+                  <Box align="center">
+                    <Text>{itemCounter}</Text>
+                  </Box>
+                  <Box>
+                    <IconButton
+                      size="xs"
+                      color="black"
+                      fontSize="1em"
+                      icon={<AiFillPlusCircle />}
+                      onClick={() => setItemCounter(itemCounter + 1)}
+                      bgColor="transparent"
+                      _hover={{ bg: "transparent" }}
+                    />
+                  </Box>
                 </HStack>
               </Box>
             </Flex>
