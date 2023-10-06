@@ -1,4 +1,4 @@
-import { Box, Text, VStack, Image, HStack, Heading } from "@chakra-ui/react";
+import { Box, Text, VStack, Grid } from "@chakra-ui/react";
 import img1 from "../../pages/cart-container/image/1.jpg";
 import img2 from "../../pages/cart-container/image/2.jpg";
 import img3 from "../../pages/cart-container/image/3.jpg";
@@ -62,10 +62,14 @@ function CartContainer() {
       <Box p="2.5em 1.5em">
         <VStack>
           <Box>
-            <Heading>Daftar Item</Heading>
+            <Text as="b" fontSize="2.5em">
+              DAFTAR ITEM
+            </Text>
           </Box>
           <Box>
-            <HStack spacing="24px">{itemList}</HStack>
+            <Grid templateColumns="repeat(4, 1fr)" templateRows="fr fr" gap={6}>
+              {itemList}
+            </Grid>
           </Box>
         </VStack>
       </Box>
