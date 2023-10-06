@@ -1,20 +1,10 @@
-import {
-  Box,
-  Text,
-  VStack,
-  Image,
-  HStack,
-  Heading,
-  Grid,
-  GridItem,
-} from "@chakra-ui/react";
+import { Box, Text, VStack, Grid } from "@chakra-ui/react";
 import img1 from "../../pages/cart-container/image/1.jpg";
 import img2 from "../../pages/cart-container/image/2.jpg";
 import img3 from "../../pages/cart-container/image/3.jpg";
 import img4 from "../../pages/cart-container/image/4.jpg";
 import img5 from "../../pages/cart-container/image/5.jpg";
 import Card from "./components/cards";
-import { BsFillCartPlusFill } from "react-icons/bs";
 function CartContainer() {
   const dataItem = [
     {
@@ -72,7 +62,7 @@ function CartContainer() {
       <Box p="2.5em 1.5em">
         <VStack>
           <Box>
-            <Text as="b" fontSize="2.5em" >
+            <Text as="b" fontSize="2.5em">
               DAFTAR ITEM
             </Text>
           </Box>
