@@ -69,8 +69,9 @@ function Navbar() {
           <Spacer />
           <Flex>
             <HStack ml="0" p="0 .5em" borderRight="2px solid lightgray">
-              <Flex align={"flex-start"}>
+              <Flex position="relative">
                 <IconButton
+                  size="md"
                   onClick={showCart}
                   variant="ghost"
                   bgColor="transparent"
@@ -78,7 +79,9 @@ function Navbar() {
                   icon={<BsCartFill size="24px" bg="red" />}
                 />
                 <Text
-                  size="xs"
+                  fontSize="0.75em"
+                  position={"absolute"}
+                  right="0"
                   w={"1.5em"}
                   h={"1.5em"}
                   bgColor={"lightgray"}
@@ -87,7 +90,7 @@ function Navbar() {
                   <Center>0</Center>
                 </Text>
               </Flex>
-              <Flex>
+              <Flex position="relative">
                 <IconButton
                   variant="ghost"
                   bgColor="transparent"
@@ -96,6 +99,9 @@ function Navbar() {
                 />
 
                 <Text
+                  position="absolute"
+                  fontSize="0.75em"
+                  right="0"
                   size="xs"
                   w={"1.5em"}
                   h={"1.5em"}
@@ -105,7 +111,7 @@ function Navbar() {
                   <Center>15</Center>
                 </Text>
               </Flex>
-              <Flex>
+              <Flex position="relative">
                 <IconButton
                   variant="ghost"
                   bgColor="transparent"
@@ -113,6 +119,9 @@ function Navbar() {
                   icon={<IoNotificationsSharp size="24px" />}
                 ></IconButton>
                 <Text
+                  fontSize="0.75em"
+                  right="0"
+                  position="absolute"
                   size="xs"
                   w={"1.5em"}
                   h={"1.5em"}
