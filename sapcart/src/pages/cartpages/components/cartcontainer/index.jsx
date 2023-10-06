@@ -10,6 +10,8 @@ import {
 } from "@chakra-ui/react";
 import { BiTrash } from "react-icons/bi";
 import { AiFillMinusCircle, AiFillPlusCircle } from "react-icons/ai";
+
+
 function CartContainer(props) {
   return (
     <>
