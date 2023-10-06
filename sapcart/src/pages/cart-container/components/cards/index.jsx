@@ -6,7 +6,7 @@ function Card(props) {
     <Box>
       <HStack spacing="24px">
         <Box
-          borderRadius=".2em"
+          borderRadius="1em"
           w="240px"
           h="320px"
           p="2.5em 1.5em"
@@ -14,7 +14,8 @@ function Card(props) {
         >
           <Box overflow="hidden">
             <Image
-              border="solid black 0.1em"
+            borderRadius={"0.5em"}
+              border="solid 0.2em grey"
               src={props.img}
               objectFit="cover"
               w="100%"
@@ -22,7 +23,9 @@ function Card(props) {
             />
           </Box>
           <VStack fontSize="sm" align="flex-end" spacing="0">
-            <Text right="20px" as="b">{props.itemName}</Text>
+            <Text right="20px" as="b">
+              {props.itemName}
+            </Text>
             <Text>{props.itemPrice}</Text>
             <IconButton
               top="1.5em"
