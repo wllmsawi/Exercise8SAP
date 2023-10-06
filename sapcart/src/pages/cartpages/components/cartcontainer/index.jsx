@@ -13,9 +13,12 @@ import { useState } from "react";
 import { BiTrash } from "react-icons/bi";
 import { AiFillMinusCircle, AiFillPlusCircle } from "react-icons/ai";
 import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { increment, decrement } from "../../../../store/reducers/Counter";
 
 function CartContainer(props) {
   const [itemCounter, setItemCounter] = useState(1);
+  const dispatch = useDispatch();
   const count = useSelector((state) => state.counter.value);
   return (
     <>

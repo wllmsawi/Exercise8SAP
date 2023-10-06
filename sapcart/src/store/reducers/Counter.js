@@ -16,7 +16,7 @@ export const Counter = createSlice({
       state.value -= 1;
     },
     addToCart: (state, actions) => {
-      const newItem = actions.payload;
+      const newItem = { ...actions.payload };
       const checkItem = state.item.find(
         (element) => element["key"] === newItem["key"]
       );
