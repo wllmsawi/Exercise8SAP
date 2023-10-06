@@ -1,4 +1,4 @@
-import { Box, Text, Heading, VStack, HStack, Flex } from "@chakra-ui/react";
+import { Box, Heading, VStack, } from "@chakra-ui/react";
 import CartContainer from "./components/cartcontainer";
 import img1 from "../../img/1.jpg";
 import img2 from "../../img/2.jpg";
