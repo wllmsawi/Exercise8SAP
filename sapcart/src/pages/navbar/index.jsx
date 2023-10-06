@@ -17,8 +17,13 @@ import { BsCartFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { IoNotificationsSharp } from "react-icons/io5";
 import { RiAccountCircleFill } from "react-icons/ri";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
+  const navigate = useNavigate();
+  function showCart() {
+    navigate("Checkout");
+  }
   return (
     <Box>
       <HStack bgColor="#B4B4B3" p=".5em 2.5em">
@@ -63,21 +68,30 @@ function Navbar() {
           <Flex>
             <HStack ml="0" p="0 .5em" borderRight="2px solid lightgray">
               <IconButton
+                onClick={showCart}
                 variant="ghost"
+                bgColor="transparent"
+                _hover={{ bg: "transparent" }}
                 icon={<BsCartFill size="24px" bg="red" />}
               ></IconButton>
               <IconButton
                 variant="ghost"
+                bgColor="transparent"
+                _hover={{ bg: "transparent" }}
                 icon={<MdEmail size="24px" />}
               ></IconButton>
               <IconButton
                 variant="ghost"
+                bgColor="transparent"
+                _hover={{ bg: "transparent" }}
                 icon={<IoNotificationsSharp size="24px" />}
               ></IconButton>
             </HStack>
             <Box>
               <IconButton
                 variant="ghost"
+                bgColor="transparent"
+                _hover={{ bg: "transparent" }}
                 icon={<RiAccountCircleFill size="24px" />}
               ></IconButton>
             </Box>
