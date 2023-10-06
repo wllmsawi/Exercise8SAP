@@ -5,7 +5,6 @@ import img3 from "../../pages/cart-container/image/3.jpg";
 import img4 from "../../pages/cart-container/image/4.jpg";
 import img5 from "../../pages/cart-container/image/5.jpg";
 import Card from "./components/cards";
-import { BsFillCartPlusFill } from "react-icons/bs";
 function CartContainer() {
   const dataItem = [
     {
