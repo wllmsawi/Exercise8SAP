@@ -48,9 +48,10 @@ function CartPages() {
       image: img5,
     },
   ];
-  let itemList = dataItem.map((data) => {
+  let itemList = dataItem.map((data, index) => {
     return (
       <CartContainer
+        key={index}
         img={data.image}
         storeName={data.storeName}
         storeLoc={data.storeLoc}
@@ -60,6 +61,7 @@ function CartPages() {
       />
     );
   });
+  console.log(itemList["key"]);
   return (
     <Box display="flex" flexDir="column" minH="100vh">
       <Box
