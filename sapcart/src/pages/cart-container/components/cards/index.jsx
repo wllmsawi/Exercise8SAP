@@ -14,7 +14,7 @@ function Card(props) {
         >
           <Box overflow="hidden">
             <Image
-            borderRadius={"0.5em"}
+              borderRadius={"0.5em"}
               border="solid 0.2em grey"
               src={props.img}
               objectFit="cover"

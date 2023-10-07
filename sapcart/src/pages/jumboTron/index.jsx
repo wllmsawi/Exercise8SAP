@@ -3,11 +3,11 @@ import { Box, Image } from "@chakra-ui/react";
 import jumbo from "./img/jumbo1.png";
 function JumboTron() {
   return (
-    <Box p="2.5em 1.5em" borderRadius="1em" overflow="hidden">
+    <Box p="1em 1.5em" borderRadius="1em" overflow="hidden">
       <Image
         src={jumbo}
-        w="100%"
-        h="306px"
+        w={"full"}
+        h={"40vh"}
         border="5px solid lightgray"
         borderRadius=".5em"
       />

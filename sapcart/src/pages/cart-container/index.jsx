@@ -68,21 +68,19 @@ function CartContainer() {
     );
   });
   return (
-    <Box h="auto" w="full" p="2.5em 1.5em">
-      <Box p="2.5em 1.5em">
-        <VStack>
-          <Box>
-            <Text as="b" fontSize="2.5em">
-              DAFTAR ITEM
-            </Text>
-          </Box>
-          <Box>
-            <Grid templateColumns="repeat(4, 1fr)" templateRows="fr fr" gap={6}>
-              {itemList}
-            </Grid>
-          </Box>
-        </VStack>
-      </Box>
+    <Box p="1em 1.5em" paddingTop={"0"}>
+      <VStack spacing={"1em"}>
+        <Box>
+          <Text as="b" fontSize="2.5em">
+            DAFTAR ITEM
+          </Text>
+        </Box>
+        <Box>
+          <Grid templateColumns="repeat(4, 1fr)" templateRows="fr fr" gap={6}>
+            {itemList}
+          </Grid>
+        </Box>
+      </VStack>
     </Box>
   );
 }
