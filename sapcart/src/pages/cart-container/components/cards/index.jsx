@@ -30,7 +30,7 @@ function Card(props) {
             <IconButton
               top="1.5em"
               color="black"
-              fontSize="1em"
+              fontSize="1.5em"
               size="xs"
               bgColor="transparent"
               _hover={{ bg: "transparent" }}
