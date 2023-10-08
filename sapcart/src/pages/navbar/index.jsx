@@ -31,11 +31,10 @@ function Navbar() {
     navigate("Checkout");
   }
   return (
-    <Box w={"full"}>
+    <Box>
       <Flex
         bgColor={"gray"}
         p=".5em 2.5em"
-        w={"full"}
         display={{ base: "none", md: "flex" }}
         justifyContent={"space-between"}
       >
@@ -62,7 +61,7 @@ function Navbar() {
             Kategori
           </Link>
         </Box>
-        <Spacer />
+        <Spacer display={{ base: "none", md: "block" }} />
         <Box>
           <VStack align={"stretch"}>
             <Box>
