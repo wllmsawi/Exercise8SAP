@@ -27,7 +27,7 @@ function CartContainer(props) {
         p=".5em 0"
         borderTop="2px solid lightGray"
         borderBottom="2px solid lightGray"
-        w="70%"
+        w={{ base: "100%", md: "70%" }}
       >
         <VStack spacing=".5em" align="stretch">
           <Box className="storeName" display="flex" alignItems="center">

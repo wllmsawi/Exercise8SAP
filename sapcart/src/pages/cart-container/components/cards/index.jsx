@@ -14,7 +14,7 @@ function Card(props) {
         >
           <Box overflow="hidden">
             <Image
-            borderRadius={"0.5em"}
+              borderRadius={"0.5em"}
               border="solid 0.2em grey"
               src={props.img}
               objectFit="cover"
@@ -30,7 +30,7 @@ function Card(props) {
             <IconButton
               top="1.5em"
               color="black"
-              fontSize="1em"
+              fontSize="1.5em"
               size="xs"
               bgColor="transparent"
               _hover={{ bg: "transparent" }}

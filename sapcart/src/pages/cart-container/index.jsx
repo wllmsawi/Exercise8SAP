@@ -1,4 +1,4 @@
-import { Box, Text, VStack, Grid } from "@chakra-ui/react";
+import { Box, Text, VStack, Grid, Flex } from "@chakra-ui/react";
 import img1 from "../../pages/cart-container/image/1.jpg";
 import img2 from "../../pages/cart-container/image/2.jpg";
 import img3 from "../../pages/cart-container/image/3.jpg";
@@ -68,16 +68,31 @@ function CartContainer() {
     );
   });
   return (
-    <Box h="auto" w="full" p="2.5em 1.5em">
-      <Box p="2.5em 1.5em">
-        <VStack>
+    <Box
+      p="1em 1.5em"
+      paddingTop={"0"}
+      overflow={"hidden"}
+      display={"flex"}
+      flexDir={"column"}
+      alignItems={"center"}
+    >
+      <Box w={"100%"}>
+        <VStack spacing={"1em"}>
           <Box>
             <Text as="b" fontSize="2.5em">
               DAFTAR ITEM
             </Text>
           </Box>
           <Box>
-            <Grid templateColumns="repeat(4, 1fr)" templateRows="fr fr" gap={6}>
+            <Grid
+              templateColumns={{
+                base: "repeat(1, 1fr)",
+                md: "repeat(3, 1fr)",
+                xl: "repeat(4, 1fr)",
+              }}
+              templateRows="fr fr"
+              gap={6}
+            >
               {itemList}
             </Grid>
           </Box>
